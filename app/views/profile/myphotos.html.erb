@@ -1,0 +1,9 @@
+<h1>TSL AM Dev Students</h1>
+
+<ul>
+  <% @photos.each do |photo| %>
+  <li>
+	  <img src= '<%= photo["images"]["low_resolution"]["url"] %>'>
+	</li>
+	<% end %>
+</ul>
