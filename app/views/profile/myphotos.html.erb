@@ -1,9 +1,35 @@
-<h1>TSL AM Dev Students</h1>
-
-<ul>
+<div class="container_fluid">
+  <nav class="row_fluid navigation">
+    <h1>#Hashtag Albums</h1>
+  </nav>
+  <header class='row_fluid banner'> </header>
+  <div class="row_fluid profile_separator">
+    <div class="span2 profile_image"></div>
+    <div class="btn-group btn-info pull-right photo_filter">
+      <button class="btn btn-info btn-large active">Photos</button>
+      <button class="btn btn-info btn-large">Albums</button>
+      <button class="btn btn-info btn-large">Friends</button>
+    </div>
+  </div>
+</div>
+<div id ="container" class="centered">
   <% @photos.each do |photo| %>
-  <li>
-	  <img src= '<%= photo["images"]["low_resolution"]["url"] %>'>
-	</li>
-	<% end %>
-</ul>
+    <div class="image_block">
+      <img src= '<%= photo["images"]["low_resolution"]["url"] %>' class='thumbnails'>
+    </div>
+  <% end %>
+</div>
+
+<script src="masonry.min.js"></script>
+<script>
+  window.onload = function() {
+    
+    
+    var wall = new Masonry( document.getElementById('container'), {
+      columnWidth: 240, 
+      isFitWidth: true
+    });
+    
+  };
+</script>
+  

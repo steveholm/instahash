@@ -1,0 +1,104 @@
+.masonry,
+.masonry .masonry-brick {
+  -webkit-transition-duration: 0.4s;
+     -moz-transition-duration: 0.4s;
+      -ms-transition-duration: 0.4s;
+       -o-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+.masonry {
+  -webkit-transition-property: width, height;
+     -moz-transition-property: width, height;
+      -ms-transition-property: width, height;
+       -o-transition-property: width, height;
+          transition-property: width, height;
+}
+
+.masonry .masonry-brick {
+  -webkit-transition-property: left, right, top;
+     -moz-transition-property: left, right, top;
+      -ms-transition-property: left, right, top;
+       -o-transition-property: left, right, top;
+          transition-property: left, right, top;
+}
+
+body {
+  background: url('png.png');
+}
+
+.navigation {
+  background: #343131;
+  height: 52px;
+  margin: 0 0 0 0;
+  padding: 10px 0px 0px 0px;
+  text-align: center;
+  
+  h1 {
+    color: #ffffff;
+    margin: 0;
+    text-shadow: 1px 1px 1px #000000;
+  }
+}
+
+.banner {
+  background: url('collage.jpeg');
+  background-size: cover;
+  height: 200px;
+  width: 100%;
+}
+
+.profile_separator {
+  background: #e3e3e3;
+  box-shadow: 1px 1px 1px #676767, inset 1px 1px 10px #ffffff;
+  height: 80px;
+  margin: 0px 0px 20px 0px;
+  
+  .profile_image {
+    background: url("avatar_170px.png");
+    border: 10px solid #E3E3E3;
+    border-radius: 96px;
+    box-shadow: inset 0px -2px 0px white, inset 0px 3px 3px #3D3D3D, 0px -2px 0px 0px #676767;
+    height: 140px;
+    margin-top: -84px;
+    margin-left: 30px;
+    width: 140px;
+  }
+    
+  .photo_filter {
+    margin: 21px 32px 0px 0px;
+  }
+
+}
+
+.centered {
+  margin: 0 auto;
+}
+
+.image_block {
+  float:left;
+  width: 220px;
+  
+}
+
+.thumbnails {
+  border: 4px solid #ffffff;
+  box-shadow: 1px 1px 1px #676767;
+  display: block;
+  margin-bottom: 13px;
+  margin-left: 0px;
+}
+
+
+/*.btn-info {
+  background: #ff670f;
+  background: -moz-linear-gradient(top, #ff670f 0%, #ff670f 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff670f), color-stop(100%,#ff670f));
+  background: -webkit-linear-gradient(top, #ff670f 0%,#ff670f 100%);
+  background: -o-linear-gradient(top, #ff670f 0%,#ff670f 100%);
+  background: -ms-linear-gradient(top, #ff670f 0%,#ff670f 100%);
+  background: linear-gradient(to bottom, #ff670f 0%,#ff670f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff670f', endColorstr='#ff670f',GradientType=0 );
+}*/
+
+
